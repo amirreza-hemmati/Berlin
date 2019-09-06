@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  margin-top: 180px;
+  background-color: #000000;
+  padding: 90px 0;
+
+  .footer__social {
+    text-align: center;
+    a {
+      @include links(13px, #b1b1b1, none);
+      margin: 0 10px;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .footer__end-massage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #757575;
+    line-height: 27px;
+  }
+}

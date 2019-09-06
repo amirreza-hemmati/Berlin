@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+  background-image: linear-gradient(
+      rgba(07, 07, 07, 0.5),
+      rgba(07, 07, 07, 0.5)
+    ),
+    url(../imgs/headerbg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 70px 140px 70px;
+  @include clickp(50% 0%,100% 0, 100% 74%,21% 99%,0 78%,0 0);
+  font-family: 'Poppins', sans-serif;
+
+  h1{
+      margin-bottom: 20px;
+      @include typography(white,27px,bold,1,inherit,left);
+  }
+
+  .header__icon a{
+      @include links(15px,white,none);
+      margin: 0 15px;
+      transition: all 0.4s;
+      &:hover{
+          opacity: 0.5;
+      }
+  }
+
+  @include respon("xm"){
+        h1{
+        font-size: 32px !important;
+        }
+
+        .header__icon a{
+            font-size: 12px
+        }
+    }
+  @include respon("sm"){
+      h1{
+        font-size: 50px !important;
+      }
+  }
+  @include respon("md"){
+      h1{
+        font-size: 75px !important;
+      }
+
+      .header__icon a{
+          font-size: 15px;
+      }
+  }
+}

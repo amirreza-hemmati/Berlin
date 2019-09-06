@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@mixin links($font-size,$color,$text-decoration) {
+    font-size: $font-size;
+    color: $color;
+    text-decoration: $text-decoration;
+}
+
+@mixin typography($color,$font-size,$font-weight,$line-height,$font-family,$text-align) {
+    color:$color;
+    font-size:$font-size;
+    font-weight:$font-weight;
+    line-height:$line-height;
+    font-family:$font-family;
+    text-align: $text-align;
+}
+
+@mixin clickp($one,$two,$three,$four,$five,$six) {
+    clip-path: polygon($one,$two,$three,$four,$five,$six);
+}
+
+@mixin respon($device) {
+    @if($device == "xm"){
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 0px) { @content }
+    }
+    @else if ($device == "sm"){
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) { @content }
+    }
+    @else if ($device == "md"){
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) { @content }
+    }
+    @else if ($device == "lg"){
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) { @content }
+    }
+}
