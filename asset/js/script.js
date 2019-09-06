@@ -1,1 +1,1 @@
-document.body.style.width = window.innerWidth + "px"
+document.body.style.width = (window.innerWidth+"px")
