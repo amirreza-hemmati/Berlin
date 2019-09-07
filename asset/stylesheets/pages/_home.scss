@@ -35,11 +35,13 @@
   }
 
   .about__slider {
-    margin: 250px 0;
+    margin: 100px 0;
     margin-bottom: 450px;
     display: flex;
+    flex-wrap: wrap;
     div {
       padding: 0 15px;
+      margin-top: 50px;
       h6 {
         font-size: 15px;
         letter-spacing: 2px;
