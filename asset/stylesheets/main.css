@@ -290,6 +290,7 @@
 
 .main__about {
   background-color: whitesmoke;
+  margin-bottom: 100px;
 }
 
 .main__about .container {
@@ -319,7 +320,7 @@
 
 .main__about .container .about__slider {
   margin: 100px 0;
-  margin-bottom: 450px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
