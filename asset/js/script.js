@@ -9,7 +9,10 @@ setTimeout(() => {
     animationa.style.transition = "height 2s";
     setTimeout(() => {
         const animation2 = document.querySelector(".animation-start");
-        animation2.style.transition = "opacity 2s";
+        animation2.style.transition = "2s";
         animation2.style.opacity = "0";
+        setTimeout(() => {
+        animation2.style.display = "none";            
+        }, 2000);
     }, 2000);
 }, 5800 );
