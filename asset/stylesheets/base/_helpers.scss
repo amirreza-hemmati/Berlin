@@ -35,4 +35,16 @@
     &:focus{
         outline: none;
     }
+}    
+
+@include respon("xm"){
+    .toggle-menu{
+        height: 100% !important;
+    }
+}
+
+@include respon("md"){
+    .toggle-menu{
+        height: auto !important;
+    }
 }

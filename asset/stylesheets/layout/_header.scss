@@ -34,6 +34,36 @@
       }
   }
 
+  .header__scroll-down{
+    color: #fff;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-left: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 50px 74px 0;
+    animation: downtop 1.5s infinite;
+    position: relative;
+    @keyframes downtop {
+      0%{
+        top: 0;
+      }
+      25%{
+        top: 50px;
+      }
+      50%{
+        top: 30px;
+      }
+      75%{
+        top: 50px;
+      }
+      90%{
+        top: 0;
+      }
+    }
+  }
+
   @include respon("xm"){
         h1{
         font-size: 32px !important;

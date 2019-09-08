@@ -19,7 +19,6 @@
 
 // 4. Layout-related sections
 @import
-  'layout/animation-css',
   'layout/nav',
   'layout/header',
   'layout/main',
@@ -31,7 +30,10 @@
 
 // 6. Page-specific styles
 @import
+  'pages/animation-css',
+  'pages/image-slider',
   'pages/home';
+
 
 // 7. Themes
 @import

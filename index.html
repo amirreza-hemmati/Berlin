@@ -11,16 +11,32 @@
     <link rel="stylesheet" href="asset/stylesheets/main.css" />
   </head>
   <body>
-    <div class="animation-start">
+    <!-- <div class="animation-start">
       <div class="animation-start__container">
         <div class="animation-start__container_width"></div>
       </div>
+    </div> -->
+    <div class="image-sliding">
+      <div class="image-sliding__chang-icon">
+        <i class="fa fa-angle-left fa-5x"></i>
+      </div>
+      <div class="image-sliding__image">
+        <div class="text-right btn-block">
+        <i class="image-sliding__image_remove-icon" title="close">&times;</i>
+        </div>
+        <div>
+          <img class="image-slider" alt="work-1">
+        </div>
+        <div class="image-sliding__number"><span id="spn-number"></span></div>
+      </div>
+      <div class="image-sliding__chang-icon">
+          <i class="fa fa-angle-right fa-5x"></i>
+      </div>
     </div>
-
     <nav class="nav">
       <div class="nav__logo">
         <div>
-          <img src="asset/imgs/logo.png" alt="logo.png" title="Berlin" />
+          <img src="asset/imgs/logo.png" alt="logo.png" title="Berlin" class="image-slid"/>
         </div>
         <i class="fa fa-bars nav__logo_menu-phone"></i>
       </div>
@@ -35,7 +51,7 @@
       </div>
     </nav>
 
-    <header class="header">
+    <header class="header y-scroll">
       <div>
         <div class="header__content">
           <h1 class="header__content_title">
@@ -65,13 +81,12 @@
 
         <div class="header__scroll-down">
           <i class="fa fa-angle-down"></i>
-          <!-- bounce 2s infinite -->
         </div>
       </div>
     </header>
 
     <main class="main">
-      <section class="main__about">
+      <section class="main__about y-scroll">
         <div class="container">
           <div class="main__about_img">
             <img src="asset/imgs/profile-2.jpg" title="profile" alt="profile" />
@@ -123,7 +138,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio y-scroll">
         <div class="container">
           <h2 class="portfolio__content">
             PORTFOLIO
@@ -190,7 +205,7 @@
         </div>
       </section>
 
-      <section class="latest-blogs">
+      <section class="latest-blogs y-scroll">
         <div class="container">
           <h2 class="text-right ltr latest-blogs__title">
             LATEST BLOGS
@@ -247,7 +262,7 @@
         </div>
       </section>
 
-      <section class="get-touch">
+      <section class="get-touch y-scroll">
         <div class="container">
           <div class="get-touch__call">
             <h2>
@@ -289,13 +304,14 @@
               <h2 class="get-touch__mail_content">
                 leave us a message
               </h2>
-              <form class="get-touch__mail_form">
+              <form class="get-touch__mail_form" name="form">
                 <div class="flex">
                   <div class="get-touch__mail_div">
                     <input
                       type="text"
                       class="get-touch__mail_input input"
                       placeholder="Name"
+                      name="name"
                     />
                   </div>
                   <div class="get-touch__mail_div">
@@ -303,6 +319,7 @@
                       type="mail"
                       placeholder="Email"
                       class="get-touch__mail_input input"
+                      name="email"
                     />
                   </div>
                 </div>
@@ -313,10 +330,11 @@
                     cols="30"
                     rows="10"
                     class="get-touch__mail_input input"
+                    id="txtarea"
                   ></textarea>
                 </div>
                 <div class="flexbox">
-                  <input type="submit" value="submit" class="btn" />
+                  <input type="submit" value="submit" class="btn btn-send" />
                 </div>
               </form>
             </div>
@@ -324,7 +342,11 @@
         </div>
       </section>
     </main>
-
+<br>
+<br>
+<br>
+<br>
+<br>
     <footer class="footer">
       <div class="footer__social">
         <a href="#">
@@ -346,8 +368,12 @@
             Copyright © 2018 Berlin, All rights Reserved.
             <br>
             Created by tavonline
-      </p>
+      </p>  
     </footer>
+
+    <script src="asset/js/smtpjs.js"></script>
+    <script src="asset/js/sendmassage.js"></script>
+    <script src="asset/js/sliderimage.js"></script>
     <script src="asset/js/script.js"></script>
   </body>
 </html>
