@@ -64,7 +64,7 @@ forms.addEventListener("submit",(e) => {
             To : "berlinproject2018@gmail.com",
             From : "berlinproject2018@gmail.com",
             Subject : `your name: ${name.value}`,
-            Body : `Hello your send massage:<hr>${massages.value} <br> ${email.vlaue}`
+            Body : `Hello your send massage:<hr>${massages.value}<br>${email.vlaue}`
         }).then(
         message => {
             alert('your email is: ' + massage)
