@@ -64,7 +64,7 @@ forms.addEventListener("submit",(e) => {
             To : "berlinproject2018@gmail.com",
             From : "berlinproject2018@gmail.com",
             Subject : `your name: ${name.value}`,
-            Body : `Hello your send massage:<hr>${document.querySelector("#txtarea").value}<br>${forms["email"].value}`
+            Body : `Hello your send massage:<hr>${document.querySelector("#txtarea").value}<br>${document.getElementById("email").value}`
         }).then(
         message => {
             alert(message);
