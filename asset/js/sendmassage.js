@@ -58,11 +58,11 @@ forms.addEventListener("submit",(e) => {
     }
     else{
         Email.send({
-            SecureToken : "2d22c698-b70e-4d2e-aae7-935f5e9ff0df",
+            SecureToken : "814e52a4-f3f9-4a21-8117-d1905eebc800",
             To : "berlinproject2018@gmail.com",
             From : "berlinproject2018@gmail.com",
             Subject : `your name: ${name.value}`,
-            Body : `Hello your send massage:<hr>${massage.value}`
+            Body : `Hello your send massage:<hr>${massage.value} <br> ${email.vlaue}`
         }).then(
         message => {
             if(window.navigator.onLine)
@@ -71,6 +71,9 @@ forms.addEventListener("submit",(e) => {
             }else{
                 alert("email no sending")
             }
+            name.value = "";
+            email.value = "";
+            massage.value = "";
         }
         );
     }
