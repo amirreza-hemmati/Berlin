@@ -65,12 +65,7 @@ forms.addEventListener("submit",(e) => {
             Body : `Hello your send massage:<hr>${massage.value} <br> ${email.vlaue}`
         }).then(
         message => {
-            if(window.navigator.onLine)
-            {
-                alert("email is sending")
-            }else{
-                alert("email no sending")
-            }
+            alert('your email is: ' + massage)
             name.value = "";
             email.value = "";
             massage.value = "";
