@@ -5,6 +5,7 @@ const navMenu = document.getElementsByTagName("nav")[0];
 const navItem = document.getElementsByClassName("nav-item");
 const navLink = document.getElementsByClassName("nav-link");
 let yScroll = document.getElementsByClassName("y-scroll");
+const animationa = document.getElementsByClassName("animation-start__container_width")[0];
 
 
 /*
@@ -17,10 +18,7 @@ class mAnimations {
 
   loader() {
     setTimeout(() => {
-      const animationa = document.getElementsByClassName(
-        ".animation-start__container_width"
-      )[0];
-      animationa.style.margin = 0;
+      animationa.style.margin = "0";
       animationa.style.width = "100%";
       animationa.style.height = "100%";
       animationa.style.transition = "height 2s";
