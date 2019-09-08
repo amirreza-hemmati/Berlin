@@ -58,7 +58,7 @@ forms.addEventListener("submit",(e) => {
     }
     else{
         Email.send({
-            SecureToken : "814e52a4-f3f9-4a21-8117-d1905eebc800",
+            SecureToken : "7548a260-30f6-4326-ba61-ec5c24da9b3a",
             To : "berlinproject2018@gmail.com",
             From : "berlinproject2018@gmail.com",
             Subject : `your name: ${name.value}`,
