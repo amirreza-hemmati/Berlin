@@ -3,7 +3,7 @@ const forms = document.forms["form"];
 forms.addEventListener("submit",(e) => {
     e.preventDefault();
     const name = forms["name"];
-    const email = forms["email"];
+    const email = document.getElementById("email");
     const massages = document.querySelector("#txtarea");
 
 
@@ -64,7 +64,7 @@ forms.addEventListener("submit",(e) => {
             To : "berlinproject2018@gmail.com",
             From : "berlinproject2018@gmail.com",
             Subject : `your name: ${name.value}`,
-            Body : `Hello your send massage:<hr>${document.querySelector("#txtarea").value}<br>${document.getElementById("email").value}`
+            Body : `Hello your send massage:<hr>${document.querySelector("#txtarea").value}<br>${email.value}`
         }).then(
         message => {
             alert(message);
